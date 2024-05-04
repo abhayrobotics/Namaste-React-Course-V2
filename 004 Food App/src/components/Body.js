@@ -58,6 +58,7 @@ const Body = () => {
     if (onlineStatus === false) {
         return <h1>Looks Like you're Offline. Check Your internet Connection !!</h1>
     }
+    // console.log(ListofRestuarant.length)
     if (ListofRestuarant.length === 0) {
         return <ShimmerBody />
     }
