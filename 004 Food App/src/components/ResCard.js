@@ -14,7 +14,7 @@ const ResCard = (props) => {
         // console.log(resData.info);
     // console.log(name);
     return (
-        <div className=" w-[220px] h-[300px] mx-4 my-4  rounded-xl shadow-lg bg-slate-100  border-[1px] transition hover:border-black hover:bg-slate-200 hover:scale-110 hover:shadow-xl">
+        <div  data-testid="resCard" className=" w-[220px] h-[300px] mx-4 my-4  rounded-xl shadow-lg bg-slate-100  border-[1px] transition hover:border-black hover:bg-slate-200 hover:scale-110 hover:shadow-xl">
             <div className="h-40 overflow-hidden  rounded-t-xl ">
                 <img  className=" object-contain" src={IMG_URL+cloudinaryImageId} alt="" />
             </div>
