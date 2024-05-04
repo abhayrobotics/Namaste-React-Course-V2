@@ -41,7 +41,7 @@ const Body = () => {
             // console.log(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants );
             // ? optional chaining
             const filterApiData = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-            // console.log( filterApiData)
+            console.log( filterApiData)
 
             setListofRestuarant(filterApiData)
            
