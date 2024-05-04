@@ -1,3 +1,8 @@
+# Basic Setup Required to run the above repository
+- cd  <folder> (in the specified directory preffered in 004 Food App)
+- npm install 
+- npm install --only=dev 
+
 # Inception
 
 ## creating first program
