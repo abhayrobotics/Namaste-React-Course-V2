@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Practice</title>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="root2"></div>
+    
+    <!-- Using JS to write HTML -->
+    <script>
+        const root = document.getElementById('root')
+        const h1 = document.createElement("h1");
+
+        h1.innerHTML ="Hello React using JS"
+
+        root.appendChild(h1)
+ 
+    </script>
+
+
+    <!-- USing React CDN  -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- USing React CDN with code in script tag  -->
+    <script>
+        const heading = React.createElement('h1',{},"Hello World using REACT in script")
+        const root2 = ReactDOM.createRoot(document.getElementById('root2'));
+        root2.render(heading)
+
+        // Create Element ,root then render
+    </script>
+
+
+
+</body>
+</html>

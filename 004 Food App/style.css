@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: #031d2a;
+    --color-white: #fff;
+    --bg2: #f0f0f0;
+    --bg2: #ddd;
+    --gray:#999;
+    
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ********************************************* header **************************** */
+.header{
+    background-color: var(--main-color);
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    /* color: white; */
+}
+.logo img{
+    width: 80px;
+    
+    /* border: 1px solid red; */
+}
+.nav-items{
+    color: var(--color-white)
+
+}
+.nav-items ul{
+    display: flex;
+    align-items: center;
+}
+.nav-items ul li{
+    margin:10px;
+    list-style: none;
+    font-size: 20px;
+    
+}
+li a {
+    color: var(--color-white)
+
+}
+.login{
+    border: 1px solid var(--color-white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 85px;
+    text-align: center;
+}
+
+/* ********************************************************body filter************ */
+.top-filter{
+    display: flex;
+    margin: 0 55px;
+    
+
+}
+.filter__method{
+    margin: 10px 15px;
+}
+.top-filter  button{
+    outline: none;
+    background-color: var(--color-white);
+    border: 1px solid var(--main-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.searchInput{
+    margin: 0 5px ;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid var(--main-color);
+    outline: none;
+    border-radius: 5px;
+}
+/* ********************************************************card************ */
+.heading{
+    font-size: 24px;
+    margin: 5px 65px ;
+    font-weight: 500;
+}
+.res__container{
+    margin: 10px 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: auto; */
+}
+.res__container a{
+    color: var(--main-color);
+}
+.res__card{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: var(--bg2);
+    border-radius: 10px;
+    border: 1px solid var(--bg2);
+    cursor: pointer;
+    transition: transform 300ms ;
+}
+
+.res__card:hover{
+   transform: scale(1.1);
+   /* transition: transform 300ms ; */
+    border: 1px solid black;
+
+}
+
+.res__img{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.res__img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    /* height: 100%; */
+    object-fit: cover;
+    
+    /* border: 1px solid black; */
+}
+.res__desc{
+    text-align: left;
+    width: 100%;
+}
+.res__desc h4{
+    font-weight: 400;
+
+}
+.text-hide{
+    display: -webkit-box;
+   
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: pre-wrap;
+}
+
+/* ******************** Shimmer UI************ */
+.shimmer__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.shimmer__card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: left;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px 10px;
+    
+    border-radius: 10px;
+    border: 1px solid var(--bg2);
+    cursor: pointer;
+    background-color: #ddd;
+}
+.shimmer__img{
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    background-color: #bbb;
+}
+.shimmer__line{
+    background-color: #bbb;
+   
+    height: 20px;
+    margin: 5px;
+ 
+  
+}
+.l1{
+    width: 150px;
+}
+.l2{
+    width: 120px;
+}
+.l3{
+    width:80px;
+}
+.shimmer__card .shimmer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+ 
+    background: linear-gradient(100deg,
+    rgba(255,255,255,0) 20%,
+    rgba(255,255,255,0.5) 50%,
+    rgba(255,255,255,0) 80%);
+ 
+    animation: shimmer 2s infinite linear;
+}
+ 
+@keyframes shimmer{
+    from {
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(200%);
+    }
+}
+/* ****************************** resturant MEnu********************** */
+.menu__card{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.content-center{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+.menu__item{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.menu__image{
+    width: 120px;
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.text h4{
+    font-weight: 500;
+    margin: 5px 0;
+}
+.text p{
+    font-size: 15px;
+    color: var(--gray);
+}
+/* hr{
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+} */
+
+/* ************************* About ****************************************** */
+.user-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    
+}
+
+.user__img{
+    width: 200px;
+}

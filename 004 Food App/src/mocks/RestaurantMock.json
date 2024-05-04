@@ -1,0 +1,75 @@
+
+{
+    "info": {
+        "id": "302699",
+        "name": "Barbeque Nation",
+        "cloudinaryImageId": "qzqeafcmayvxggjgj7rf",
+        "locality": "Ulsoor",
+        "areaName": "Ulsoor",
+        "costForTwo": "₹600 for two",
+        "cuisines": [
+            "Barbecue",
+            "Biryani",
+            "Kebabs",
+            "Mughlai",
+            "Desserts"
+        ],
+        "avgRating": 4.2,
+        "parentId": "2438",
+        "avgRatingString": "4.2",
+        "totalRatingsString": "500+",
+        "sla": {
+            "deliveryTime": 56,
+            "lastMileTravel": 4.8,
+            "serviceability": "SERVICEABLE",
+            "slaString": "55-60 mins",
+            "lastMileTravelString": "4.8 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-05-02 16:30:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "₹150 OFF",
+            "subHeader": "ABOVE ₹499",
+            "discountTag": "FLAT DEAL"
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+        "context": "seo-data-dbae80dc-5362-4812-8396-6d7a938d105f"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/barbeque-nation-ulsoor-bangalore-302699",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}
