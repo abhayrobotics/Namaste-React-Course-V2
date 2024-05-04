@@ -66,6 +66,7 @@ const Body = () => {
   }
   return (
     <div className="body">
+     
       <div className=" flex items-center mt-2">
         <div className="search px-3 py-2  ">
           <input
@@ -122,9 +123,8 @@ const Body = () => {
         </button>
       </div>
 
-          {/*  New component Food Choice */}
+      {/*  New component Food Choice */}
       <FoodChoice />
-
 
       <div className="mx-4 font-semibold text-2xl">
         Top Restaurants in Town :

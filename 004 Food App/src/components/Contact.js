@@ -1,4 +1,5 @@
 import Input from "postcss/lib/input";
+// import FoodChoice from "./FoodChoice";
 
 const Contact = ()=>{
 
@@ -11,6 +12,7 @@ const Contact = ()=>{
                 <input type="text" className="p-2 m-2 rounded border border-blue-500" placeholder="Your Message" />
                 <button className="p-2 m-2 rounded border border-blue-500">Submit</button>
             </form>
+            <FoodChoice />
             
         </div>
     )
