@@ -4,6 +4,7 @@ import ResCard, { WithPromoted, isVeg } from "./ResCard";
 import { Link } from "react-router-dom";
 import ShimmerBody from "./ShimmerBody";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import FoodChoice from "./FoodChoice";
 
 const Body = () => {
   // ? list of Restuarants , variable
@@ -120,6 +121,11 @@ const Body = () => {
           <p>All</p>
         </button>
       </div>
+
+          {/*  New component Food Choice */}
+      <FoodChoice />
+
+
       <div className="mx-4 font-semibold text-2xl">
         Top Restaurants in Town :
       </div>
