@@ -14,6 +14,7 @@ import Cart1 from "./components/Cart1"
 // redux
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import FoodInMind from "./components/FoodInMind";
 
 
 
@@ -64,7 +65,11 @@ const newRouter = createBrowserRouter([
       {
         path:"/cart",
         element:<Cart1 />
-      }
+      },
+      {
+      path:"/foodInMind",
+      element:<FoodInMind />
+    }
     ],
   },
 ]);

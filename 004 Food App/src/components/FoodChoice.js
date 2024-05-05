@@ -16,7 +16,7 @@ const FoodChoice = () => {
 
     const mainJson = await mainAPI.json();
 
-    console.log(mainJson);
+    // console.log(mainJson);
     const foodChoiceList =
       mainJson?.data?.cards[0]?.card?.card?.imageGridCards?.info;
 
@@ -26,15 +26,17 @@ const FoodChoice = () => {
 
   return (
     <>
-      <div className=" w-9/12 overflow-scroll overflow-y-hidden m-auto">
+      <div className=" w-9/12 m-auto  ">
         <div className="font-bold text-2xl mb-2">What's on your mind ?</div>
         {/* Banner Food Choice */}
-        <div className=" flex ">
-          {foodList.map((item) => {
+        <div className=" flex w-  ">
+          {foodList?.map((item) => {
             return (
-            //   <Link to="www.google.com"  key ="2">
-                <img className="w-36 mx-2" src={IMG_URL + item?.imageId} />
-            //   </Link>
+              <div className="w-32 ">
+                <Link to="/foodInMind" key={item.id}>
+                  <img className=" mx-2" src={IMG_URL + item?.imageId} />
+                </Link>
+              </div>
             );
           })}
         </div>

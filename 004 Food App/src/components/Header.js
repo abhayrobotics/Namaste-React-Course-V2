@@ -19,7 +19,7 @@ const Header = () => {
         // console.log(cartItems)
 
     return (
-        <div className=" px-3 py-2 flex justify-between items-center  bg-main-color text-white">
+        <div className=" px-3 py-2 flex justify-between items-center   shadow-2xl shadow-[#282c3f26]">
             <div className="w-20">
                 {/* <Link to="/"><img src={logo} alt="" /></Link> */}
                 {/* <Link to="/"><img src={require("../asset/logo.png")} alt="" /></Link> */}

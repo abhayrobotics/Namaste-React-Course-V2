@@ -134,8 +134,8 @@ const Body = () => {
         {filteredRestaurant?.map((item) => {
           // console.log(item.info.id)
           return (
-            <>
-              <Link to={"restaurant/" + item.info.id} key={item.info.id}>
+            <div key={item.info.id}>
+              <Link to={"restaurant/" + item.info.id} >
                 {item.info.veg ? (
                   <RestCardVeg resData={item} />
                 ) : (
@@ -143,7 +143,7 @@ const Body = () => {
                 )}
               </Link>
               <div data-testid="resCard"></div>
-            </>
+            </div>
           );
         })}
       </div>
