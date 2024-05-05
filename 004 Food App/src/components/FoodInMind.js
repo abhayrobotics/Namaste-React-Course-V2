@@ -46,7 +46,7 @@ const FoodInMind = () => {
 
   return (
     <>
-      <div className="flex flex-col w-9/12 m-auto">
+      <div className="flex flex-col w-10/12 m-auto">
         <div className="text-3xl font-bold p-4 pb-1">{Ids[0]}</div>
         <div className="text-lg text-slate-500  px-4 pb-4">
           {rawMenu?.data?.cards[0]?.card?.card?.description}
