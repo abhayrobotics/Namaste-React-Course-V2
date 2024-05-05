@@ -66,7 +66,6 @@ const Body = () => {
   }
   return (
     <div className="body">
-     
       <div className=" flex items-center mt-2">
         <div className="search px-3 py-2  ">
           <input
@@ -126,16 +125,16 @@ const Body = () => {
       {/*  New component Food Choice */}
       <FoodChoice />
 
-      <div className="mx-4 font-semibold text-2xl">
+      <div className="m-auto my-2 font-semibold text-2xl w-10/12 px-4 ">
         Top Restaurants in Town :
       </div>
 
-      <div className="flex flex-wrap mx-20 border-4 justify-center items-center">
+      <div className="flex flex-wrap mx-20  justify-center items-center">
         {filteredRestaurant?.map((item) => {
           // console.log(item.info.id)
           return (
             <div key={item.info.id}>
-              <Link to={"restaurant/" + item.info.id} >
+              <Link to={"restaurant/" + item.info.id}>
                 {item.info.veg ? (
                   <RestCardVeg resData={item} />
                 ) : (
