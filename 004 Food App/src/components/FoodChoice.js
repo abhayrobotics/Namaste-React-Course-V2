@@ -31,8 +31,22 @@ const FoodChoice = () => {
         {/* Banner Food Choice */}
         <div className=" flex  overflow-scroll overflow-y-hidden  ">
           {foodList?.map((item) => {
+
+            // getting the id and biriyani tag for URL by splitting
+            let foodCategory = item.action.link;
+
+            foodCategory =foodCategory.split("collection_id=")
+            // console.log(foodCategory)
+
+            foodCategory =foodCategory[1].split("&tags")[0]
+
+            const foodCategoryId =item.action.text
+
+            console.log(foodCategoryId)
             return (
-              <Link to={"/foodInMind/"+item.id} key={item.id}>
+              <Link to={"/foodInMind/"+foodCategoryId+"_"+foodCategory} key={item.id}>
+                {/* {console.log(item)} */}
+               
                 <div className=" w-36 h-44 mx-2 ">
                   <img
                     className="w-36 h-44 object-cover"

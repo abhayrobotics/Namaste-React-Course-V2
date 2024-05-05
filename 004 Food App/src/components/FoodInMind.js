@@ -4,12 +4,19 @@ import { useParams } from "react-router-dom";
 import ResCard from "./ResCard";
 
 const FoodInMind = () => {
-  const BANNER_URL =
-    "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9966085&lng=77.5920743&collection=83649&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null";
-  // const BANNER_URL ="https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9966085&lng=77.5920743&collection="+83649+"&tags=layout_CCS_"+Biryani+"&sortBy=&filters=&type=rcv2&offset=0&page_type=null"
-
   // importing the id from link (parent)
   const { foodid } = useParams();
+  const Ids = foodid.split("_");
+  //   const BANNER_URL =
+  ("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9966085&lng=77.5920743&collection=83649&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
+  const BANNER_URL =
+    "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9966085&lng=77.5920743&collection=" +
+    Ids[1] +
+    "&tags=layout_CCS_" +
+    Ids[0] +
+    "&sortBy=&filters=&type=rcv2&offset=0&page_type=null";
+
+  console.log(foodid);
 
   const [bannerFoodMenu, setBannerFoodMenu] = useState([]);
 
@@ -34,18 +41,23 @@ const FoodInMind = () => {
 
   return (
     <>
-      <div>Food In Mind</div>
-        <div className="flex w-9/12 flex-wrap m-auto">
-            {bannerFoodMenu.map((x) => {
+      <div className="flex flex-col w-9/12 m-auto">
+        
+        <div className="text-3xl bold p-4">{Ids[0]}</div>
+        <div className="flex  flex-wrap m-auto ">
+          {bannerFoodMenu.map((x) => {
             return (
-                <>
+              <>
                 {/* Restaurant card with specific dish */}
-                <ResCard resData={x?.card?.card} key={x?.card?.card?.info?.id} />
-                </>
+                <ResCard
+                  resData={x?.card?.card}
+                  key={x?.card?.card?.info?.id}
+                />
+              </>
             );
-            })}
+          })}
+        </div>
       </div>
-      
     </>
   );
 };
