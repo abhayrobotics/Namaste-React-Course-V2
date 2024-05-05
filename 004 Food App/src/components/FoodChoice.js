@@ -26,17 +26,20 @@ const FoodChoice = () => {
 
   return (
     <>
-      <div className=" w-9/12 m-auto  ">
-        <div className="font-bold text-2xl mb-2">What's on your mind ?</div>
+      <div className=" w-9/12 m-auto ">
+        <div className="  font-bold text-2xl mb-2">What's on your mind ?</div>
         {/* Banner Food Choice */}
-        <div className=" flex w-  ">
+        <div className=" flex  overflow-scroll overflow-y-hidden  ">
           {foodList?.map((item) => {
             return (
-              <div className="w-32 ">
-                <Link to="/foodInMind" key={item.id}>
-                  <img className=" mx-2" src={IMG_URL + item?.imageId} />
-                </Link>
-              </div>
+              <Link to="/foodInMind" key={item.id}>
+                <div className=" w-36 h-44 mx-2 ">
+                  <img
+                    className="w-36 h-44 object-cover"
+                    src={IMG_URL + item?.imageId}
+                  />
+                </div>
+              </Link>
             );
           })}
         </div>
