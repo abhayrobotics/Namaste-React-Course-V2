@@ -21,11 +21,13 @@ const Header = () => {
     return (
         <div className=" px-3 py-2 flex justify-between items-center   shadow-2xl shadow-[#282c3f26]">
             <div className="w-20">
+                
                 {/* <Link to="/"><img src={logo} alt="" /></Link> */}
                 {/* <Link to="/"><img src={require("../asset/logo.png")} alt="" /></Link> */}
             </div>
             <div className="">
                 <ul className="flex text-xl">
+                    <li className="menu  mx-2 hover:text-second-color hover:cursor-pointer"><Link to="/">Home</Link></li>
                     <li className="menu mx-2 hover:text-second-color hover:cursor-pointer">Offers</li>
                     <li className="menu  mx-2 hover:text-second-color hover:cursor-pointer"><Link to="/contact">Contact</Link></li>
                     <li className="menu  mx-2 hover:text-second-color hover:cursor-pointer"><Link to="/about" > About</Link></li>

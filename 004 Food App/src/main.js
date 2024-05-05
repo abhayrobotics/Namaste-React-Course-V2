@@ -9,12 +9,12 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Cart1 from "./components/Cart1"
+import FoodInMind from "./components/FoodInMind";
 // import Grocery from "./components/Grocery";
 
 // redux
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
-import FoodInMind from "./components/FoodInMind";
 
 
 
@@ -67,7 +67,7 @@ const newRouter = createBrowserRouter([
         element:<Cart1 />
       },
       {
-      path:"/foodInMind",
+      path:"/foodInMind/:foodid",
       element:<FoodInMind />
     }
     ],

@@ -32,7 +32,7 @@ const FoodChoice = () => {
         <div className=" flex  overflow-scroll overflow-y-hidden  ">
           {foodList?.map((item) => {
             return (
-              <Link to="/foodInMind" key={item.id}>
+              <Link to={"/foodInMind/"+item.id} key={item.id}>
                 <div className=" w-36 h-44 mx-2 ">
                   <img
                     className="w-36 h-44 object-cover"
