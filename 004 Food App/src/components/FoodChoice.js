@@ -33,16 +33,15 @@ const FoodChoice = () => {
           {foodList?.map((item) => {
 
             // getting the id and biriyani tag for URL by splitting
-            let foodCategory = item.action.link;
 
+            let foodCategory = item.action.link;
             foodCategory =foodCategory.split("collection_id=")
             // console.log(foodCategory)
-
             foodCategory =foodCategory[1].split("&tags")[0]
 
             const foodCategoryId =item.action.text
 
-            console.log(foodCategoryId)
+            // console.log(foodCategoryId)
             return (
               <Link to={"/foodInMind/"+foodCategoryId+"_"+foodCategory} key={item.id}>
                 {/* {console.log(item)} */}
