@@ -42,7 +42,7 @@ const Body = () => {
       const filterApiData =
         json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants;
-      // console.log(filterApiData);
+      console.log(filterApiData);
 
       setListofRestuarant(filterApiData);
 
