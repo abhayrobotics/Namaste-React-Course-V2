@@ -20,8 +20,8 @@ const ItemList = ({ data }) => {
                             <div className="text ">
                                 <h4 className="text-md text-gray-800 font-bold">{item?.card?.info?.name}  </h4>
                                 <h4>Rs. {item?.card?.info?.price / 100 || item?.card?.info?.defaultPrice / 100}</h4>
-                                <p className="text-slate-500 text-sm text-ellipsis overflow-hidden">{item?.card?.info?.description}</p>
-
+                                <p className="text-slate-500 text-sm text-clip overflow-hidden max-h-[3lh] w-10/12">{item?.card?.info?.description}</p>
+                                 
                             </div>
 
 
@@ -34,7 +34,7 @@ const ItemList = ({ data }) => {
                                 <span className="absolute  bottom-0 right-0 px-2 py-1 text-sm rounded text-green-500 bg-white  border-1 border-black shadow-lg cursor-pointer font-bold" onClick={() => addHandler1(item)}>Add+</span>
                             </div>
                         </li>
-                        <hr />
+                        <hr className="my-4"/>
                     </div>
                     
 
