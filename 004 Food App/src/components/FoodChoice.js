@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { IMG_URL, MAIN_API_CAll } from "../utils/constant";
 import { Link } from "react-router-dom";
 
+
 const FoodChoice = () => {
   const [foodList, setFoodList] = useState([]);
 
@@ -36,6 +37,7 @@ const FoodChoice = () => {
     // const bannerSlider = document.getElementById("banner-slider")
     bannerSlider.scrollLeft = bannerSlider.scrollLeft + 500;
   };
+
   return (
     <>
       <div className="  w-10/12 m-auto px-4  ">

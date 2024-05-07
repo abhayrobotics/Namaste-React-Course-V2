@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 // import ResCard from "../components/ResCard";
 import ResCard from "./ResCard";
+import ShimmerBody from "./ShimmerBody";
 import { Link } from "react-router-dom";
 
 const FoodInMind = () => {
@@ -41,8 +42,13 @@ const FoodInMind = () => {
     );
 
     setBannerFoodMenu(usableData);
-    console.log(usableData);
+    // console.log(usableData);
   };
+
+  // Shimmer ui
+  if(bannerFoodMenu?.length==0){
+    return <ShimmerBody />
+  }
 
   return (
     <>
@@ -55,9 +61,9 @@ const FoodInMind = () => {
         <div className="text-2xl font-bold p-4 pb-1">Restaurants to explore</div>
         <div className="flex  flex-wrap m-auto ">
           {bannerFoodMenu.map((x) => {
-            console.log(x)
+            // console.log(x)
             return (
-              <>
+              <div  key={x?.card?.card?.info?.id}>
                 {/* Restaurant card with specific dish */}
                 <Link to={"/restaurant/" + x?.card?.card?.info?.id} >
                 <ResCard
@@ -65,7 +71,7 @@ const FoodInMind = () => {
                   key={x?.card?.card?.info?.id}
                 />
                 </Link>
-              </>
+              </div>
             );
           })}
         </div>
