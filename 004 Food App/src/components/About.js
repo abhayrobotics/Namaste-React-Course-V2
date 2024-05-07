@@ -29,9 +29,9 @@ class About extends React.Component {
             has disrupted the dining experience for millions of people.<br/>
             Here’s a glimpse into what Swiggy is all about:
             <ol className="ml-2 ">
-                    <li >1. Swiggy offers an online ordering platform for a variety of neighborhood partner restaurants.</li>
-                    <li>2. Users can access Swiggy through Android and iOS devices or the user-friendly website.</li>
-                    <li>3. With a wide network of partnered restaurants, Swiggy provides convenient access to an extensive variety of delicious dishes from diverse cuisines.</li>
+                    <li className="my-2">1. Swiggy offers an online ordering platform for a variety of neighborhood partner restaurants.</li>
+                    <li className="my-2">2. Users can access Swiggy through Android and iOS devices or the user-friendly website.</li>
+                    <li className="my-2">3. With a wide network of partnered restaurants, Swiggy provides convenient access to an extensive variety of delicious dishes from diverse cuisines.</li>
                     
                 
                 </ol> 

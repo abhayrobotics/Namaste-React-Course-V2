@@ -42,7 +42,7 @@ const Body = () => {
       const filterApiData =
         json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants;
-      console.log(filterApiData);
+      // console.log(filterApiData);
 
       setListofRestuarant(filterApiData);
 
@@ -57,7 +57,7 @@ const Body = () => {
   // ?conditional
   if (onlineStatus === false) {
     return (
-      <h1>Looks Like you're Offline. Check Your internet Connection !!</h1>
+      <h1 className="m-auto p-10">Looks Like you're Offline. Check Your internet Connection !!</h1>
     );
   }
   // console.log(ListofRestuarant)

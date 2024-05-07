@@ -21,7 +21,7 @@ const FoodChoice = () => {
       mainJson?.data?.cards[0]?.card?.card?.imageGridCards?.info;
 
     setFoodList(foodChoiceList);
-    console.log(foodChoiceList);
+    // console.log(foodChoiceList);
   };
 
   // scroll functionality
