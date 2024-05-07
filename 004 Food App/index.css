@@ -22,5 +22,10 @@
     .x-new {
         height: 10px;
     }
+    .__bannerScroll::-webkit-scrollbar{
+        display: none;
+    }
 
 }
+
+/* ********************** custom css */
