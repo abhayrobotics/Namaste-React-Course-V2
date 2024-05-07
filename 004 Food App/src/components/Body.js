@@ -65,11 +65,11 @@ const Body = () => {
     return <ShimmerBody />;
   }
   return (
-    <div className="body">
+    <div className="body ">
       
       {/*  New component Food Choice */}
       <FoodChoice />
-      <div className=" flex items-center mt-2 w-9/12 m-auto">
+      <div className=" flex items-center mt-2 w-10/12 m-auto ">
         <div className="search  py-2  ">
           <input
             data-testid="searchInput"
@@ -131,7 +131,7 @@ const Body = () => {
         Top Restaurants in Town :
       </div>
 
-      <div className="flex flex-wrap mx-20  justify-center items-center">
+      <div className="flex flex-wrap w-10/12 m-auto  justify-center items-center ">
         {filteredRestaurant?.map((item) => {
           // console.log(item.info.id)
           return (

@@ -38,7 +38,7 @@ const FoodChoice = () => {
   };
   return (
     <>
-      <div className="  w-9/12 m-auto  ">
+      <div className="  w-10/12 m-auto px-4  ">
         <div className="  flex pt-4 justify-between">
           <div className="font-bold text-2xl mb-2 leading-6">
             What's on your mind ?
