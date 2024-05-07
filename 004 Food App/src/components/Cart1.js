@@ -10,9 +10,9 @@ const Cart1 = () => {
     dispatch(clearCart());
   };
   return (
-    <div>
-      <h3 className="font-bold text-2xl my-2  text-center">Cart</h3>
-      <div className="w-6/12 m-auto">
+    <div  className="w-11/12 xs:w-10/12 m-auto">
+      <h3 className="font-bold text-2xl my-2 w-11/12 xs:w-10/12 text-center">Cart</h3>
+      <div className="w-11/12 xs:w-10/12 m-auto">
         <hr />
         <div
           className="bg-red-300 p-1 w-28 cursor-pointer border-red-950 border -2 rounded text-lg"
