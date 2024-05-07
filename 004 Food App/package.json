@@ -5,7 +5,7 @@
     "start": "parcel index.html",
     "test": "jest",
     "watch-test": "jest --watch",
-    "build":"parcel build"
+    "build": "parcel build"
   },
   "author": "Abhay kumar",
   "license": "ISC",
@@ -25,6 +25,7 @@
     "@testing-library/react": "^15.0.5",
     "babel-jest": "^29.7.0",
     "buffer": "^6.0.3",
+    "gh-pages": "^6.1.1",
     "install": "^0.13.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
