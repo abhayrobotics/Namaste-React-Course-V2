@@ -22,7 +22,7 @@ const Cart1 = () => {
         </div>
         <ItemList data={cartItems} />
         {cartItems.length === 0 ? (
-          <h2>Cart is Empty. Please Add Items to view </h2>
+          <h2 className="text-center py-4">Cart is Empty. Please Add Items to view </h2>
         ) : (
           <h2></h2>
         )}
