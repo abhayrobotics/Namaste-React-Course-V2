@@ -69,11 +69,11 @@ const Body = () => {
       
       {/*  New component Food Choice */}
       <FoodChoice />
-      <div className=" flex items-center mt-2 w-10/12 m-auto ">
+      <div className=" flex flex-col xs:flex-row items-start xs:items-center mt-2 w-11/12 md:w-10/12 m-auto ">
         <div className="search  py-2  ">
           <input
             data-testid="searchInput"
-            className="border-[1px] border-gray-600 px-2 py-1 mx-2 rounded-md "
+            className="border-[1px] border-gray-600 px-2 py-1 mx-2 rounded-md  text-xs sm:text-sm"
             type="text"
             value={searchText}
             onChange={(e) => {
@@ -84,7 +84,7 @@ const Body = () => {
           />
 
           <button
-            className=" x-btn"
+            className=" x-btn text-xs sm:text-sm"
             onClick={() => {
               // ? search new restaurant based on search
 
@@ -100,38 +100,42 @@ const Body = () => {
             <p>Search</p>{" "}
           </button>
         </div>
-        <button
-          className=" x-btn "
-          onClick={() => {
-            //? filter logic
-            // console.log("button clikced")
-            let filteredlist = ListofRestuarant.filter(
-              (item) => item.info.avgRating > 4
-            );
-            // console.log(filteredlist)
+        <div>
 
-            setFilterRestaurant(filteredlist);
-          }}
-        >
-          <p className=""> Top Rated Restaurant </p>
-        </button>
-        <button
-          className=" x-btn"
-          onClick={() => {
-            setFilterRestaurant(ListofRestuarant);
-          }}
-        >
-          <p>All</p>
-        </button>
+          
+          <button
+            className=" x-btn  text-xs sm:text-sm "
+            onClick={() => {
+              //? filter logic
+              // console.log("button clikced")
+              let filteredlist = ListofRestuarant.filter(
+                (item) => item.info.avgRating > 4
+              );
+              // console.log(filteredlist)
+
+              setFilterRestaurant(filteredlist);
+            }}
+          >
+            <p className=""> Top Rated Restaurant </p>
+          </button>
+          <button
+            className=" x-btn text-xs sm:text-sm"
+            onClick={() => {
+              setFilterRestaurant(ListofRestuarant);
+            }}
+          >
+            <p>All</p>
+          </button>
+        </div>
       </div>
 
       
 
-      <div className="m-auto my-2 font-semibold text-2xl w-10/12 px-4 ">
+      <div className="m-auto my-2 font-semibold  text-xl sm:text-2xl w-11/12 md:w-10/12  px-4 border ">
         Top Restaurants in Town :
       </div>
 
-      <div className="flex flex-wrap w-10/12 m-auto  justify-center items-center ">
+      <div className="flex flex-wrap  w-11/12 justify-center sm:justify-evenly  md:w-10/12 m-auto border  items-center ">
         {filteredRestaurant?.map((item) => {
           // console.log(item.info.id)
           return (

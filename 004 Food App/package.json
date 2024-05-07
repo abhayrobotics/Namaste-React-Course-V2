@@ -4,7 +4,8 @@
   "scripts": {
     "start": "parcel index.html",
     "test": "jest",
-    "watch-test": "jest --watch"
+    "watch-test": "jest --watch",
+    "build":"parcel build"
   },
   "author": "Abhay kumar",
   "license": "ISC",

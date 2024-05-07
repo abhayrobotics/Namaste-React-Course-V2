@@ -40,15 +40,15 @@ const FoodChoice = () => {
 
   return (
     <>
-      <div className="  w-10/12 m-auto px-4  ">
+      <div className="  w-11/12 md:w-10/12 m-auto px-4  ">
         <div className="  flex pt-4 justify-between">
-          <div className="font-bold text-2xl mb-2 leading-6">
+          <div className="font-bold text-xl sm:text-2xl mb-2 leading-4">
             What's on your mind ?
           </div>
           {/* Banner Food Choice */}
           <div className="flex">
             <div
-              className="w-8 mr-2  rounded-3xl bg-slate-200 p-2 cursor-pointer"
+              className="w-8  h-8 mr-2  rounded-3xl bg-slate-200 p-2 cursor-pointer"
               onClick={leftScroll}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -56,7 +56,7 @@ const FoodChoice = () => {
               </svg>
             </div>
             <div
-              className="w-8 rounded-3xl bg-slate-200 p-2 cursor-pointer"
+              className="w-8  h-8 rounded-3xl bg-slate-200 p-2 cursor-pointer"
               onClick={rightScroll}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -88,9 +88,9 @@ const FoodChoice = () => {
               >
                 {/* {console.log(item)} */}
 
-                <div className=" w-36 h-44 mx-2 ">
+                <div className=" w-28 sm:w-36  h:36 sm:h-44 mx-2 ">
                   <img
-                    className="w-36 h-44 object-cover"
+                    className=" w-28 sm:w-36  h:36 sm:h-44 object-cover"
                     src={IMG_URL + item?.imageId}
                   />
                 </div>

@@ -8,8 +8,8 @@ const FoodCategory = ({ data }) => {
 
 
     // filtering food categories from all data
-    const FilteredCategory = resFood.filter((eachItem) => {
-        return (eachItem.card.card["@type"] == "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
+    const FilteredCategory = resFood?.filter((eachItem) => {
+        return (eachItem?.card?.card["@type"] == "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
 
     })
     // console.log(FilteredCategory)
