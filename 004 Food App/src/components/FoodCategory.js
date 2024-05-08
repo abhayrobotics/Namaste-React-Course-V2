@@ -32,7 +32,7 @@ const FoodCategory = ({ data }) => {
                 return (
                     
                     // restaurant Name
-                    <div className="shadow-md my-4 p-2 rounded-lg w-full " key={foodCategory.card.card.title} >
+                    <div className="shadow-sm my-4 p-2 rounded-lg w-full " key={foodCategory.card.card.title} >
                         <div className="flex justify-between cursor-pointer" onClick={handleClick}>
                             <div className="font-bold text-md xs:text-lg text-gray-800 ">{foodCategory.card.card.title} ({foodCategory.card.card.itemCards.length})</div>
                             <div className="font-extrabold w-4 h-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
@@ -46,7 +46,7 @@ const FoodCategory = ({ data }) => {
                             {(index === showIndex ? true : false) && <ItemList data={foodCategory.card.card.itemCards}  />}
 
                         </ul>
-                        <hr />
+                        {/* <hr /> */}
                     </div>
 
                 )
