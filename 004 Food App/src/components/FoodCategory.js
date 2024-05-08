@@ -17,7 +17,7 @@ const FoodCategory = ({ data }) => {
     return (
         <>
 
-            {FilteredCategory.map((foodCategory, index) => {
+            {FilteredCategory?.map((foodCategory, index) => {
                 // changing the index to the item it is clicked
                   handleClick = () => {
                     // console.log("clicked")

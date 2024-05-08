@@ -1,11 +1,13 @@
 {
   "name": "food-app",
   "version": "1.0.0",
+  "homepage": "https://abhayrobotics.github.io/Namaste-React-Course-V2/004 Food App",
   "scripts": {
     "start": "parcel index.html",
     "test": "jest",
     "watch-test": "jest --watch",
-    "build": "parcel build"
+    "predeploy": "parcel build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Abhay kumar",
   "license": "ISC",

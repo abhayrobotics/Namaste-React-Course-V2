@@ -131,11 +131,11 @@ const Body = () => {
 
       
 
-      <div className="m-auto my-2 font-semibold  text-xl sm:text-2xl w-11/12 md:w-10/12  px-4 border ">
+      <div className="m-auto my-2 font-semibold  text-xl sm:text-2xl w-11/12 md:w-10/12  px-4 ">
         Top Restaurants in Town :
       </div>
 
-      <div className="flex flex-wrap  w-11/12 justify-center sm:justify-evenly  md:w-10/12 m-auto border  items-center ">
+      <div className="flex flex-wrap  w-11/12 justify-center sm:justify-evenly  md:w-10/12 m-auto  items-center ">
         {filteredRestaurant?.map((item) => {
           // console.log(item.info.id)
           return (
