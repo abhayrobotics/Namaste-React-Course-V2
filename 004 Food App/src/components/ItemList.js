@@ -28,7 +28,7 @@ const ItemList = ({ data }) => {
                             {/* food image */}
                             <div className="relative ">
                                 <div className="w-28 h-24 xs:w-40 xs:h-36 rounded-md">
-                                <img className=" object-cover  w-full h-full rounded-md overflow-hidden " src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/" + item.card.info.imageId} alt="" />
+                                <img className=" object-cover  w-full h-full rounded-md overflow-hidden "  src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/" + item.card.info.imageId} alt="" />
 
                                 </div>
                                 <span className="absolute  bottom-0 right-0 px-2 py-1 text-sm rounded text-green-500 bg-white  border-1 border-black shadow-lg cursor-pointer font-bold" onClick={() => addHandler1(item)}>Add+</span>

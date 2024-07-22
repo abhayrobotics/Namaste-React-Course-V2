@@ -23,7 +23,7 @@ const Header = () => {
             <div className="pl-1 pr-4 py-4 flex justify-between items-center   shadow-2xl shadow-[#e2e2e626]  w-11/12 md:w-10/12 m-auto   ">
                 <div className=" w-14 sm:w-20  px-0 mx-0 ">
                     
-                    <Link to="/"><img src={logo} alt="" className=" scale-110 hover:scale-125 duration-150"/></Link>
+                    <Link to="/"><img src={logo}  alt="" className=" scale-110 hover:scale-125 duration-150"/></Link>
                     {/* <Link to="/"><img src={require("../asset/swiggy.png")} alt="" /></Link> */}
                 </div>
                 <div className="w-fit">
