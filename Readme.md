@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4294dfe8-e750-4645-beaf-690e591fbd89/deploy-status)](https://swiggy-abhay.netlify.app/)
 # Basic Setup Required to run the above repository
 - cd  <folder> (in the specified directory preffered in 004 Food App)
 - npm install 

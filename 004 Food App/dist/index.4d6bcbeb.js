@@ -35076,7 +35076,8 @@ parcelHelpers.export(exports, "Menu_URL", ()=>Menu_URL);
 parcelHelpers.export(exports, "MAIN_API_CAll", ()=>MAIN_API_CAll);
 const IMG_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const Menu_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=";
-const MAIN_API_CAll = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.51800&lng=88.38320&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+const MAIN_API_CAll = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.51800&lng=88.38320&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING" // https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9966085&lng=77.5920743&restaurantId=3241&catalog_qa=undefined&submitAction=ENTER
+;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4tzkw":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2934 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
