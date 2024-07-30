@@ -33196,8 +33196,8 @@ var _reactRedux = require("react-redux");
 var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
-    const [loginBtn, setLoginBtn] = (0, _react.useState)("Login");
-    const onlineStatus = (0, _useOnlineStatusDefault.default)();
+    // const [loginBtn, setLoginBtn] = useState("Login");
+    // const onlineStatus = useOnlineStatus()
     // console.log("header render")
     // subscribing to selector
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
@@ -33353,9 +33353,8 @@ const Header = ()=>{
         columnNumber: 9
     }, undefined);
 };
-_s(Header, "1EpAbhcwsi8c9WvIPftop/xNfe0=", false, function() {
+_s(Header, "sOGYiwJY+kD+ABxufRt7JbvggIE=", false, function() {
     return [
-        (0, _useOnlineStatusDefault.default),
         (0, _reactRedux.useSelector)
     ];
 });

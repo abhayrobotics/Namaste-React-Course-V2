@@ -8,9 +8,9 @@ import { useSelector } from "react-redux";
 
 
 const Header = () => {
-    const [loginBtn, setLoginBtn] = useState("Login");
+    // const [loginBtn, setLoginBtn] = useState("Login");
 
-    const onlineStatus = useOnlineStatus()
+    // const onlineStatus = useOnlineStatus()
     
     // console.log("header render")
     // subscribing to selector
