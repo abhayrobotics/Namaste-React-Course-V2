@@ -4,6 +4,11 @@ import ItemList from "./ItemList";
 const FoodCategory = ({ data }) => {
   const resFood = data;
   const [showIndex, setShowIndex] = useState(1);
+  
+  handleClick = () => {
+    // console.log("clicked")
+    setShowIndex(index);
+  }
 
   // filtering food categories from all data
   const FilteredCategory = resFood?.filter((eachItem) => {
@@ -53,7 +58,7 @@ const FoodCategory = ({ data }) => {
             <ul className=" flex flex-col  justify-center  ">
               {/* {console.log(showIndex, index)} */}
               {(index === showIndex ? true : false) && (
-                <ItemList data={foodCategory.card.card.itemCards} />
+                <ItemList data={foodCategory?.card?.card?.itemCards} />
               )}
             </ul>
             {/* <hr /> */}
