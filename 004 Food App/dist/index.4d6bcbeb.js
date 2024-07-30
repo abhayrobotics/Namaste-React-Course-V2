@@ -36208,7 +36208,7 @@ const FoodCategory = ({ data })=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "flex justify-between cursor-pointer",
-                        onClick: handleClick,
+                        onClick: handleClick = ()=>setShowIndex(index),
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "font-bold text-md xs:text-lg text-gray-800 ",
@@ -36220,8 +36220,8 @@ const FoodCategory = ({ data })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/FoodCategory.js",
-                                lineNumber: 37,
-                                columnNumber: 29
+                                lineNumber: 41,
+                                columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "font-extrabold w-4 h-4",
@@ -36232,24 +36232,24 @@ const FoodCategory = ({ data })=>{
                                         d: "M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
                                     }, void 0, false, {
                                         fileName: "src/components/FoodCategory.js",
-                                        lineNumber: 38,
-                                        columnNumber: 131
+                                        lineNumber: 47,
+                                        columnNumber: 19
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/FoodCategory.js",
-                                    lineNumber: 38,
-                                    columnNumber: 69
+                                    lineNumber: 46,
+                                    columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/FoodCategory.js",
-                                lineNumber: 38,
-                                columnNumber: 29
+                                lineNumber: 45,
+                                columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/FoodCategory.js",
-                        lineNumber: 36,
-                        columnNumber: 25
+                        lineNumber: 37,
+                        columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                         className: " flex flex-col  justify-center  ",
@@ -36257,19 +36257,19 @@ const FoodCategory = ({ data })=>{
                             data: foodCategory.card.card.itemCards
                         }, void 0, false, {
                             fileName: "src/components/FoodCategory.js",
-                            lineNumber: 46,
-                            columnNumber: 70
+                            lineNumber: 56,
+                            columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/FoodCategory.js",
-                        lineNumber: 44,
-                        columnNumber: 25
+                        lineNumber: 53,
+                        columnNumber: 13
                     }, undefined)
                 ]
             }, foodCategory.card.card.title, true, {
                 fileName: "src/components/FoodCategory.js",
-                lineNumber: 35,
-                columnNumber: 21
+                lineNumber: 33,
+                columnNumber: 11
             }, undefined));
         })
     }, void 0, false);
