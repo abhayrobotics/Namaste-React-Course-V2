@@ -24,7 +24,7 @@ const FoodCategory = ({ data }) => {
 
           // if clicked on open categories it wil close
           if (index == showIndex) {
-            setShowIndex(null);
+            setShowIndex(false);
           }
         };
 

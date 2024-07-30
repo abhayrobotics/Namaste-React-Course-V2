@@ -15,7 +15,7 @@ const Cart1 = () => {
       <div className="w-11/12 xs:w-10/12 m-auto">
         <hr />
         <div
-          className="bg-red-300 p-1 w-28 cursor-pointer border-red-950 border -2 rounded text-lg"
+          className="bg-[#ff9a69] p-1 w-28 text-center cursor-pointer border-red-950 border -2 rounded text-lg"
           onClick={clearHandler}
         >
           Clear Cart

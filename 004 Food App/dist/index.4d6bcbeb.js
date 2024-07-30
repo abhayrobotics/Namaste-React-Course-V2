@@ -36155,6 +36155,7 @@ const useRestaurantInfo = (resid)=>{
         const resFoodData = json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR.cards;
         setResMenu(resData);
         setFoodInfo(resFoodData);
+        console.log(json);
         console.log(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR);
     };
     return [
@@ -36200,7 +36201,7 @@ const FoodCategory = ({ data })=>{
                 // console.log("clicked")
                 setShowIndex(index);
                 // if clicked on open categories it wil close
-                if (index == showIndex) setShowIndex(null);
+                if (index == showIndex) setShowIndex(false);
             };
             return(// restaurant Name
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40446,7 +40447,7 @@ const Cart1 = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bg-red-300 p-1 w-28 cursor-pointer border-red-950 border -2 rounded text-lg",
+                        className: "bg-[#ff9a69] p-1 w-28 text-center cursor-pointer border-red-950 border -2 rounded text-lg",
                         onClick: clearHandler,
                         children: "Clear Cart"
                     }, void 0, false, {
