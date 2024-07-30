@@ -4,11 +4,8 @@ import ItemList from "./ItemList";
 const FoodCategory = ({ data }) => {
   const resFood = data;
   const [showIndex, setShowIndex] = useState(1);
-  
-  handleClick = () => {
-    // console.log("clicked")
-    setShowIndex(index);
-  }
+
+ 
 
   // filtering food categories from all data
   const FilteredCategory = resFood?.filter((eachItem) => {
@@ -23,7 +20,7 @@ const FoodCategory = ({ data }) => {
     <>
       {FilteredCategory?.map((foodCategory, index) => {
         // changing the index to the item it is clicked
-        handleClick = () => {
+        const handleClick = () => {
           // console.log("clicked")
           setShowIndex(index);
 
