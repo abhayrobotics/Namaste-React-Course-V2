@@ -33196,8 +33196,8 @@ var _reactRedux = require("react-redux");
 var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
-    // const [loginBtn, setLoginBtn] = useState("Login");
-    // const onlineStatus = useOnlineStatus()
+    const [loginBtn, setLoginBtn] = (0, _react.useState)("Login");
+    const onlineStatus = (0, _useOnlineStatusDefault.default)();
     // console.log("header render")
     // subscribing to selector
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
@@ -33353,8 +33353,9 @@ const Header = ()=>{
         columnNumber: 9
     }, undefined);
 };
-_s(Header, "sOGYiwJY+kD+ABxufRt7JbvggIE=", false, function() {
+_s(Header, "1EpAbhcwsi8c9WvIPftop/xNfe0=", false, function() {
     return [
+        (0, _useOnlineStatusDefault.default),
         (0, _reactRedux.useSelector)
     ];
 });
@@ -36154,8 +36155,8 @@ const useRestaurantInfo = (resid)=>{
         const resFoodData = json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
         setResMenu(resData);
         setFoodInfo(resFoodData);
-        console.log(json);
-        console.log(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR);
+    // console.log(json)
+    // console.log(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR)
     };
     return [
         resMenu,
@@ -36213,9 +36214,9 @@ const FoodCategory = ({ data })=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "font-bold text-md xs:text-lg text-gray-800 ",
                                 children: [
-                                    foodCategory.card.card.title,
+                                    foodCategory?.card?.card?.title,
                                     " (",
-                                    foodCategory.card.card.itemCards.length,
+                                    foodCategory?.card?.card?.itemCards?.length,
                                     ")"
                                 ]
                             }, void 0, true, {
@@ -36266,7 +36267,7 @@ const FoodCategory = ({ data })=>{
                         columnNumber: 13
                     }, undefined)
                 ]
-            }, foodCategory.card.card.title, true, {
+            }, foodCategory?.card?.card?.title, true, {
                 fileName: "src/components/FoodCategory.js",
                 lineNumber: 33,
                 columnNumber: 11
@@ -36309,6 +36310,7 @@ const ItemList = ({ data })=>{
             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "w-full",
                 children: [
+                    console.log(item),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: " flex   justify-between   my-2  duration-200 transition-all",
                         children: [
@@ -36401,7 +36403,7 @@ const ItemList = ({ data })=>{
                 ]
             }, item?.card?.info?.id, true, {
                 fileName: "src/components/ItemList.js",
-                lineNumber: 17,
+                lineNumber: 16,
                 columnNumber: 21
             }, undefined);
         })

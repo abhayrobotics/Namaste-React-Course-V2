@@ -13,8 +13,8 @@ const ItemList = ({ data }) => {
             { data.map((item) => {
                 return (   
                     
-                        
                     <div key={item?.card?.info?.id} className="w-full">
+                        {console.log(item)}
                         {/* food Description */}
                         <li className=" flex   justify-between   my-2  duration-200 transition-all">
                             <div className="text ">

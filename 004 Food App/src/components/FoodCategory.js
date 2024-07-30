@@ -32,15 +32,15 @@ const FoodCategory = ({ data }) => {
           // restaurant Name
           <div
             className="shadow-sm my-4 p-2 rounded-lg w-full "
-            key={foodCategory.card.card.title}
+            key={foodCategory?.card?.card?.title}
           >
             <div
               className="flex justify-between cursor-pointer"
               onClick={(handleClick = () => setShowIndex(index))}
             >
               <div className="font-bold text-md xs:text-lg text-gray-800 ">
-                {foodCategory.card.card.title} (
-                {foodCategory.card.card.itemCards.length})
+                {foodCategory?.card?.card?.title} (
+                {foodCategory?.card?.card?.itemCards?.length})
               </div>
               <div className="font-extrabold w-4 h-4">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
